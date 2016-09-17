@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mean Bean"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold|italic"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Quantity"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:onClick="increment"
+                android:padding="5dp"
+                android:text="+"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:onClick="decrement"
+                android:padding="5dp"
+                android:text="-"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:onClick="submitOrder"
+            android:padding="5dp"
+            android:text="Submit Order"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/order_summary_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
